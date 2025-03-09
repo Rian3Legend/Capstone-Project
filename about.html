@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-container {
+            max-width: 900px;
+            margin: 140px auto 70px;
+            background-color: #1e1e1e;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0, 195, 255, 0.4);
+            text-align: center;
+        }
+
+        .about-container h1 {
+            color: #00c3ff;
+            margin-bottom: 25px;
+            font-size: 42px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .about-container p {
+            color: #ffffff;
+            font-size: 22px;
+            line-height: 2;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        .about-container b {
+            color: #ff00ff;
+        }
+
+        .about-container hr {
+            border: 1px solid #00c3ff;
+            margin: 30px 0;
+        }
+
+        /* Back button styles */
+        .back-btn {
+            background-color: #ff00ff;
+            color: white;
+            font-size: 18px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #00c3ff;
+        }
+
+        .back-btn:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">My Website</a>
+        <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+        <div class="nav-links" id="navLinks">
+            <a href="navbar.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="about-container">
+        <h1>About Me</h1>
+        <p>Hi, I'm <b>Hasin Yameen Rian</b>. I'm passionate about <b>gaming, coding, and reading books</b>. I am currently a student in <b>Class 8</b> at <b>Mirpur Cantonment Public School and College</b>.</p>
+        
+        <hr>
+        
+        <p>I have experience in <b>Scratch, CSS, HTML, and JavaScript</b>. I enjoy coding as a fun activity and a way to explore my creativity. I love experimenting with new projects and learning how technology works. Coding is not just about creating programs; for me, it's about solving problems and making things more efficient.</p>
+        
+        <hr>
+        
+        <p>Although I love coding, my dream job is to become an <b>Economist</b>. I am fascinated by how economies work, how financial systems shape the world, and how data analysis can solve real-world problems. The ability to predict financial trends and understand global markets excites me, and I aspire to contribute to economic development.</p>
+        
+        <hr>
+        
+        <p>Balancing my studies with my hobbies can sometimes be challenging, but I make sure to manage my time well so I can learn and have fun at the same time. I believe that education is the foundation for success, and I strive to keep improving myself every day.</p>
+        
+        <hr>
+        
+        <p>Thank you for visiting my page! Feel free to explore more about my interests and projects. If you'd like to connect or collaborate, don't hesitate to reach out!</p>
+
+        <!-- Back button -->
+        <button class="back-btn" onclick="window.location.href='navbar.html'">Back</button>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("navLinks");
+            nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+</body>
+</html>
