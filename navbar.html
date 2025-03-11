@@ -3,8 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar with Slideshow</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Hover Effects */
+        .navbar a:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .mySlides:hover .text {
+            background: rgba(0, 0, 0, 0.8);
+            transition: 0.3s;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .footer:hover {
+            color: #fff;
+            background-color: #444;
+            transition: 0.3s;
+        }
+
+        /* Rounded Corners for Slider Images */
+        .mySlides {
+            border-radius: 20px; /* Adjust the value to control the roundness */
+            overflow: hidden; /* Ensures the image stays within the rounded corners */
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -15,26 +44,25 @@
             <a href="about.html">About</a>
             <a href="gallery.html">Gallery</a>
             <a href="#contact">Contact</a>
-    
         </div>
     </nav>
 
     <div class="slideshow-container">
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
-            <div class="slide-bg" style="background-image: url(d.jpg);"></div>
+            <div class="slide-bg" style="background-image: url('https://plus.unsplash.com/premium_photo-1682629632657-4ac307921295?q=80&w=1452&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
             <div class="text">Welcome to My Website</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
-            <div class="slide-bg" style="background-image: url(leaves.jpg);"></div>
+            <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1529778873920-4da4926a72c2?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
             <div class="text">Explore Our Services</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
-            <div class="slide-bg" style="background-image: url(images.jpg);"></div>
+            <div class="slide-bg" style="background-image: url('https://plus.unsplash.com/premium_photo-1675098654728-ad113d7db26e?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
             <div class="text">Contact Us Anytime</div>
         </div>
 
@@ -83,7 +111,7 @@
         }
     </script>
     <div class="footer">
-        &copy; 2025 All Right Reserved
+        &copy; 2025 All Right Reserved By Hasin
     </div>
 </body>
 </html>
