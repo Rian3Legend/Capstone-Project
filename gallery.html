@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increased size */
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 100px auto 40px auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px; /* Increased height */
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.08);
+            box-shadow: 0px 0px 20px rgba(0, 195, 255, 0.4); /* Blue glow effect */
+            filter: brightness(1.2) contrast(1.1); /* Slight brightness and contrast increase */
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+            font-size: 28px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">My Website</a>
+        <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+        <div class="nav-links" id="navLinks">
+            <a href="navbar.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <h1>Photo Gallery</h1>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=600&h=400&fit=crop" alt="Nature Image">
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=400&fit=crop" alt="City at Night">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&h=400&fit=crop" alt="Forest Trees">
+        <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mountain Sunset">
+        <img src="https://plus.unsplash.com/premium_photo-1664304455335-602b6811149a?q=80&w=1370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Space Galaxy">
+        <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=600&h=400&fit=crop" alt="Desert Dunes">
+        <img src="https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Beach View">
+        <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1511&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Waterfall Scene">
+        <img src="https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?w=600&h=400&fit=crop" alt="Snowy Mountains">
+    </div>
+
+    <div class="footer">
+        &copy; 2025 All Right Reserved by Hasin
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("navLinks");
+            if (navLinks.style.display === "flex") {
+                navLinks.style.display = "none";
+            } else {
+                navLinks.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+</html>

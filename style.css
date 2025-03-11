@@ -150,3 +150,12 @@ body {
         display: block;
     }
 }
+.footer {
+    background-color: #2C2C2C;
+    color: #B0B0B0;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+}
